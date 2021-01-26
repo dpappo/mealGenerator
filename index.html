@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="https://twemoji.maxcdn.com/2/svg/1f354.svg"/>
+  <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
+
+  <title>Meal Generator</title>
+</head>
+<body>
+
+
+
+  <div id="container" class="section">
+    
+    <div id="content">
+<div id="description"><h1>Meal Generator</h1>
+<p id="descriptor">Wondering what to make for dinner tonight? Take a look through your pantry and fridge, and put in your ingredients separated by commas, and press the Generate Meal button.</p></div>
+
+      <div id="inputs">
+        <input type="text" name="protein" id="proteinInput"> 
+        <label for="protein">Enter proteins here</label><br>
+        <input type="text" name="fat" id="fatInput">
+        <label for="fats">Enter fats here</label><br>
+        <input type="text" name="veggies" id="veggiesInput">
+        <label for="veggies">Enter veggies here</label><br>
+        <input type="text" name="spices" id="spicesInput">
+        <label for="spices">Enter spices here</label><br>
+        <input type="text" name="side" id="sidesInput">
+        <label for="side">Enter sides here</label><br>
+      </div>
+    
+  <button onclick="generateTheMeal()" id="generate">Generate Meal!</button>
+  <div class="section">
+    <p id="output">
+
+    </p>
+    
+  </div>
+
+
+</div>
+</div>
+
+<script src="/mealGenerator.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.pagepiling.js"></script>
+
+</body>
+</html>
